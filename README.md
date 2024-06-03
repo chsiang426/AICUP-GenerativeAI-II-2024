@@ -1,5 +1,9 @@
-# AICUP_GenerativeAI_II_2024
-
+# 以生成式AI建構無人機於自然環境偵察時所需之導航資訊競賽 II － 導航資料生成競賽
+Team Name : TEAM_5171  
+Team Member : 張翔 (隊長)、王睦閎  
+Public Score : 	0.783753 (9th/128)  
+Private Score : 0.782478 (9th/128)  
+[競賽連結](https://tbrain.trendmicro.com.tw/Competitions/Details/35)  
 ## Repository Structure
 （* 符號：因檔案內容過大，需自行新增，參考**File Description** 1、2）
 ```
