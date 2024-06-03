@@ -57,7 +57,7 @@ Private Score : 0.782478 (9th/128)
 └── └── *UNet_epoch_775.pth
 ```
 2. **存放 Public testing dataset 及 Private testing dataset**  
-   ```Public_testing_dataset``` 及 ```Private_testing_dataset``` 可從[競賽官網](https://tbrain.trendmicro.com.tw/Competitions/Details/35)下載，解壓縮後修改資料夾名為 'Public_testing_dataset' 及 'Private_testing_dataset'
+   ```Public_testing_dataset``` 及 ```Private_testing_dataset``` 可從[競賽官網](https://tbrain.trendmicro.com.tw/Competitions/Details/35)下載，解壓縮後資料夾名修改為 'Public_testing_dataset' 及 'Private_testing_dataset'
 ```
 ├── *Public_testing_dataset
 │   └── *img
