@@ -86,7 +86,7 @@ Private Score : 0.782478 (9th/128)
 └── └── UnetPatchGAN.py
 ```
 5. **進行資料擴增**  
-   執行後會產生 ```Training_dataset/aug_train```，存放原圖像及擴增後的圖像於 ```imgs``` 以及 ```gts```
+   執行後會在 ```Training_dataset``` 產生 ```aug_train``` 資料夾，存放原圖像及擴增後的圖像
 ```
 ├── preprocess.ipynb
 ```
