@@ -86,7 +86,7 @@
 ├── train_autoencoder.ipynb
 └── train_Unet.ipynb
 ```
-7. 進行測試與上傳 public testing dataset 及 private testing dataset 生成結果
+7. 進行測試與生成 public testing dataset 及 private testing dataset 結果
 ```
 ├── evaluation.ipynb
 ```
