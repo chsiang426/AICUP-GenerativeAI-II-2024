@@ -3,6 +3,7 @@ Team Name : TEAM_5171
 Team Member : 張翔 (隊長)、王睦閎  
 Public Score : 	0.783753 (9th/128)  
 Private Score : 0.782478 (9th/128)  
+
 [競賽連結](https://tbrain.trendmicro.com.tw/Competitions/Details/35)  
 ## Repository Structure
 （* 符號：因檔案內容過大，需自行新增，參考 **File Description** 1、2）
