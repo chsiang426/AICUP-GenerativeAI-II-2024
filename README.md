@@ -103,6 +103,10 @@ Private Score : 0.782478 (9th/128)
 ```
 
 ## Set Up Environment
+根據合適的顯卡版本安裝 [pytorch、cudatoolkit](https://pytorch.org/)
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
 安裝套件
 ```
 pip install -r requirements.txt
