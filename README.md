@@ -72,7 +72,7 @@ pip install -r requirements.txt
 ```
 3. **存放拆分過後的訓練資料集**  
    將訓練資料集（共 4320 張圖像）拆分為 8:1:1，分別存放於 ```train```、```validation```、```test``` 三資料夾中的 ```imgs``` 以及 ```gts```  
-   我們已事先拆分，可從[拆分後訓練集下載連結](https://drive.google.com/drive/folders/1kpdUyI5xJUwnJnk_qU78NpusmoHFGszS)，解壓縮後存放於 ```Training_dataset``` 資料夾中
+   我們已事先拆分，可從[拆分後訓練集下載連結](https://drive.google.com/drive/folders/1kpdUyI5xJUwnJnk_qU78NpusmoHFGszS)下載，解壓縮後存放於 ```Training_dataset``` 資料夾中
 ```
 ├── *Training_dataset
 │   ├── *test
