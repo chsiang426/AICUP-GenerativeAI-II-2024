@@ -9,7 +9,7 @@ Private Score : 0.782478 (9th/128)
 （* 符號：因檔案內容過大，需自行新增，參考 **File Description** 1、2）
 ```
 ├── *best_models_weight
-│   ├── *autoencoder_epoch_230.pth
+│   ├── *EncoderDecoder_epoch_230.pth
 │   ├── *UNet_epoch_465.pth
 │   ├── *UNet_epoch_645.pth
 │   ├── *UNet_epoch_680.pth
@@ -33,7 +33,7 @@ Private Score : 0.782478 (9th/128)
 │
 ├── models
 │   ├── _init_.py
-│   ├── autoencoderPatchGAN.py
+│   ├── EncoderDecoderPatchGAN.py
 │   └── UnetPatchGAN.py
 │
 ├── .gitignore
@@ -41,7 +41,7 @@ Private Score : 0.782478 (9th/128)
 ├── requirements.txt
 ├── evaluation.ipynb
 ├── preprocess.ipynb
-├── train_autoencoder.ipynb
+├── train_EncoderDecoder.ipynb
 └── train_Unet.ipynb
 ```
 
@@ -50,7 +50,7 @@ Private Score : 0.782478 (9th/128)
    [模型權重檔下載連結](https://drive.google.com/drive/folders/1vI8NS6J3swXml3Ksrf4vWbSQ3AYMQoJ9?usp=sharing)。下載後存放於 ```best_models_weight``` 資料夾內
 ```
 ├── *best_models_weight
-│   ├── *autoencoder_epoch_230.pth
+│   ├── *EncoderDecoder_epoch_230.pth
 │   ├── *UNet_epoch_465.pth
 │   ├── *UNet_epoch_645.pth
 │   ├── *UNet_epoch_680.pth
@@ -82,7 +82,7 @@ Private Score : 0.782478 (9th/128)
 ```
 ├── models
 │   ├── _init_.py
-│   ├── autoencoderPatchGAN.py
+│   ├── EncoderDecoderPatchGAN.py
 └── └── UnetPatchGAN.py
 ```
 5. **進行資料擴增**  
@@ -91,9 +91,9 @@ Private Score : 0.782478 (9th/128)
 ├── preprocess.ipynb
 ```
 6. **進行模型訓練**  
-   ```train_autoencoder.ipynb```（```train_Unet.ipynb```） 執行過程會產生 ```models_autoencoder```（```models_Unet```） 及 ```autoencoder_validation_output```（```Unet_validation_output```） 兩個資料夾，分別存放訓練過程模型權重及驗證生成圖像
+   ```train_EncoderDecoder.ipynb```（```train_Unet.ipynb```） 執行過程會產生 ```models_EncoderDecoder```（```models_Unet```） 及 ```EncoderDecoder_validation_output```（```Unet_validation_output```） 兩個資料夾，分別存放訓練過程模型權重及驗證生成圖像
 ```
-├── train_autoencoder.ipynb
+├── train_EncoderDecoder.ipynb
 └── train_Unet.ipynb
 ```
 7. **進行測試與生成 public testing dataset 及 private testing dataset 結果**  
