@@ -79,7 +79,7 @@ pip install -r requirements.txt
 ```
 3. **存放拆分過後的訓練資料集**  
    將訓練資料集（共 4320 張圖像）拆分為 8:1:1，分別存放於 ```train```、```validation```、```test``` 三資料夾中的 ```imgs``` 以及 ```gts```  
-   [拆分後訓練集下載連結](https://drive.google.com/drive/folders/1kpdUyI5xJUwnJnk_qU78NpusmoHFGszS)，解壓縮後存放於 ```Training_dataset``` 資料夾中
+   我們已事先拆分，可從[拆分後訓練集下載連結](https://drive.google.com/drive/folders/1kpdUyI5xJUwnJnk_qU78NpusmoHFGszS)，解壓縮後存放於 ```Training_dataset``` 資料夾中
 ```
 ├── *Training_dataset
 │   ├── *test
@@ -117,3 +117,14 @@ pip install -r requirements.txt
 ```
 
 ## Model Structure
+**EncoderDecoder-PatchGAN：**  
+| Generator | Discriminator |
+| ----- | ----- |
+| <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_encoderdecoder.png" alt="Generator"></div> | <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></div> |
+
+**Unet-PatchGAN：**  
+| Generator | Discriminator |
+| ----- | ----- |
+| <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_pix2pix.png" alt="Generator"></div> | <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></div> |
+
+
