@@ -1,4 +1,4 @@
-# 以生成式AI建構無人機於自然環境偵察時所需之導航資訊競賽 II － 導航資料生成競賽：競賽報告與程式碼
+# 以生成式AI建構無人機於自然環境偵察時所需之導航資訊競賽 II － 導航資料生成競賽：競賽報告與程式碼 TEAM_5171
 ## Set Up Environment
 根據合適的顯卡版本安裝 [pytorch、cudatoolkit](https://pytorch.org/)
 ```
