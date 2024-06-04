@@ -98,7 +98,7 @@ pip install -r requirements.txt
 ├── preprocess.ipynb
 ```
 6. **進行模型訓練**  
-   ```train_EncoderDecoder.ipynb```（```train_Unet.ipynb```） 執行過程會產生 ```models_EncoderDecoder```（```models_Unet```） 及 ```EncoderDecoder_validation_output```（```Unet_validation_output```） 兩個資料夾，分別存放訓練過程模型權重及驗證生成圖像
+   train_EncoderDecoder.ipynb（train_Unet.ipynb） 執行過程會產生 ```models_EncoderDecoder```（```models_Unet```） 及 ```EncoderDecoder_validation_output```（```Unet_validation_output```） 兩個資料夾，分別存放訓練過程模型權重及驗證生成圖像
 ```
 ├── train_EncoderDecoder.ipynb
 └── train_Unet.ipynb
@@ -110,14 +110,30 @@ pip install -r requirements.txt
 ```
 
 ## Model Structure
-**EncoderDecoder-PatchGAN：**  
-| Generator | Discriminator |
-| ----- | ----- |
-| <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_encoderdecoder.png" alt="Generator"></div> | <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></div> |
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center;">EncoderDecoder-PatchGAN</th>
+  </tr>
+  <tr>
+    <td style="text-align:center;">Generator</td>
+    <td style="text-align:center;">Discriminator</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_encoderdecoder.png" alt="Generator"></td>
+    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></td>
+  </tr>
+</table>
 
-**Unet-PatchGAN：**  
-| Generator | Discriminator |
-| ----- | ----- |
-| <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_pix2pix.png" alt="Generator"></div> | <div style="text-align: center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></div> |
-
-
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center;">Unet-PatchGAN：</th>
+  </tr>
+  <tr>
+    <td style="text-align:center;">Generator</td>
+    <td style="text-align:center;">Discriminator</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_pix2pix.png" alt="Generator"></td>
+    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></td>
+  </tr>
+</table>
