@@ -126,7 +126,7 @@ pip install -r requirements.txt
 
 <table>
   <tr>
-    <th colspan="2" style="text-align:center;">Unet-PatchGAN：</th>
+    <th colspan="2" style="text-align:center;">Unet-PatchGAN</th>
   </tr>
   <tr>
     <td style="text-align:center;">Generator</td>
