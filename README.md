@@ -137,3 +137,9 @@ pip install -r requirements.txt
     <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></td>
   </tr>
 </table>
+
+## Awards
+
+<div style="display: flex; justify-content: space-between;">
+   <img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/Awards1.png" alt="My Image" width="500px">
+</div>
