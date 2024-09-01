@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ```
 
 ## Repository Structure
-（* 符號：因檔案內容過大，需自行新增，參考 **File Description** 1、2、3）
+（* 符號：因檔案內容過大，需自行新增，參考 **File Description** 1.、2.、3.）
 ```
 ├── *best_models_weight
 │   ├── *EncoderDecoder_epoch_230.pth
