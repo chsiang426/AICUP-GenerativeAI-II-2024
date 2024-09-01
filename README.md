@@ -141,5 +141,7 @@ pip install -r requirements.txt
 ## Awards
 
 <div style="display: flex; justify-content: space-between;">
-   <img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/Awards1.png" alt="My Image" width="500px">
+   <a href="https://www.aicup.tw/post/%E3%80%90ai-cup-2024%E3%80%91%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE%EF%BC%8D%E4%BB%A5%E7%94%9F%E6%88%90%E5%BC%8Fai%E5%BB%BA%E6%A7%8B%E7%84%A1%E4%BA%BA%E6%A9%9F%E6%96%BC%E8%87%AA%E7%84%B6%E7%92%B0%E5%A2%83%E5%81%B5%E5%AF%9F%E6%99%82%E6%89%80%E9%9C%80%E4%B9%8B%E5%B0%8E%E8%88%AA%E8%B3%87%E8%A8%8A%E7%AB%B6%E8%B3%BD-ii%EF%BC%8D-%E5%B0%8E%E8%88%AA%E8%B3%87%E6%96%99%E7%94%9F%E6%88%90%E7%AB%B6%E8%B3%BD">
+      <img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/Awards1.png" alt="My Image" width="500px">
+   </a>
 </div>
