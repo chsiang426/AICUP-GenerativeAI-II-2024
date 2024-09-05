@@ -112,29 +112,29 @@ pip install -r requirements.txt
 ## Model Structure
 <table>
   <tr>
-    <th colspan="2" style="text-align:center;">EncoderDecoder-PatchGAN</th>
+    <th colspan="2" align="center">EncoderDecoder-PatchGAN</th>
   </tr>
   <tr>
-    <td style="text-align:center;">Generator</td>
-    <td style="text-align:center;">Discriminator</td>
+    <td align="center">Generator</td>
+    <td align="center">Discriminator</td>
   </tr>
   <tr>
-    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_encoderdecoder.png" alt="Generator"></td>
-    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></td>
+    <td align="center"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_encoderdecoder.png" alt="Generator"></td>
+    <td align="center"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <th colspan="2" style="text-align:center;">Unet-PatchGAN</th>
+    <th colspan="2" align="center">Unet-PatchGAN</th>
   </tr>
   <tr>
-    <td style="text-align:center;">Generator</td>
-    <td style="text-align:center;">Discriminator</td>
+    <td align="center">Generator</td>
+    <td align="center">Discriminator</td>
   </tr>
   <tr>
-    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_pix2pix.png" alt="Generator"></td>
-    <td style="text-align:center;"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></td>
+    <td align="center"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/generator_pix2pix.png" alt="Generator"></td>
+    <td align="center"><img src="https://github.com/chsiang426/AICUP_GenerativeAI_II_2024/blob/main/README_images/discriminator_pix2pix.png" alt="Discriminator"></td>
   </tr>
 </table>
 
