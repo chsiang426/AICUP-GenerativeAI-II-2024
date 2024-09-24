@@ -1,8 +1,9 @@
 # Generative-AI Navigation Information Competition for UAV Reconnaissance in Natural Environments II：Navigation Data Generation --- TEAM_5171
 
 ## Overview
-The competition focuses on using generative AI to transform images of roads and rivers captured by drones into navigational maps, enabling autonomous navigation. It also highlights the scarcity of competitions that combine these two fields, aiming to deepen participants' understanding and capabilities in applying these technologies to real-world scenarios.
+This is AI CUP 2024 spring competition ([website](https://tbrain.trendmicro.com.tw/Competitions/Details/35)). The competition focuses on using generative AI to transform images of roads and rivers captured by drones into navigational maps, enabling autonomous navigation. It also highlights the scarcity of competitions that combine these two fields, aiming to deepen participants' understanding and capabilities in applying these technologies to real-world scenarios.  
 
+We received an Honorable Mention (Top 5%) in this competition.
 ## Set Up Environment
 Install [pytorch、cudatoolkit](https://pytorch.org/) according to the appropriate GPU version.
 ```
