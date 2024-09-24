@@ -1,16 +1,20 @@
-# 以生成式AI建構無人機於自然環境偵察時所需之導航資訊競賽 II － 導航資料生成競賽：競賽報告與程式碼 TEAM_5171
+# Generative-AI Navigation Information Competition for UAV Reconnaissance in Natural Environments II：Navigation Data Generation --- TEAM_5171
+
+## Overview
+The competition focuses on using generative AI to transform images of roads and rivers captured by drones into navigational maps, enabling autonomous navigation. It also highlights the scarcity of competitions that combine these two fields, aiming to deepen participants' understanding and capabilities in applying these technologies to real-world scenarios.
+
 ## Set Up Environment
-根據合適的顯卡版本安裝 [pytorch、cudatoolkit](https://pytorch.org/)
+Install [pytorch、cudatoolkit](https://pytorch.org/) according to the appropriate GPU version.
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
-安裝套件
+Install the required packages.
 ```
 pip install -r requirements.txt
 ```
 
 ## Repository Structure
-（* 符號：因檔案內容過大，需自行新增，參考 **File Description** 1.、2.、3.）
+(The **\*** Symbol: Due to the large file content, you'll need to add them manually, referring to **File Description** 1., 2., 3.)
 ```
 ├── *best_models_weight
 │   ├── *EncoderDecoder_epoch_230.pth
@@ -52,8 +56,8 @@ pip install -r requirements.txt
 ```
 
 ## File Description
-1. **存放 Private Leaderboard 使用之模型權重**  
-   [模型權重檔下載連結](https://drive.google.com/drive/folders/1-EiTXvRRYNAr4StBn47Q_sWFIwtV5o-c)。下載後存放於 ```best_models_weight``` 資料夾中
+1. **To store the model weights used for the Private Leaderboard**  
+   [Model weights download link](https://drive.google.com/drive/folders/1-EiTXvRRYNAr4StBn47Q_sWFIwtV5o-c) After downloading, store them in the best_models_weight folder.
 ```
 ├── *best_models_weight
 │   ├── *EncoderDecoder_epoch_230.pth
@@ -62,17 +66,17 @@ pip install -r requirements.txt
 │   ├── *UNet_epoch_680.pth
 └── └── *UNet_epoch_775.pth
 ```
-2. **存放 Public testing dataset 及 Private testing dataset**  
-   ```Public_testing_dataset``` 及 ```Private_testing_dataset``` 可從[競賽官網](https://tbrain.trendmicro.com.tw/Competitions/Details/35)下載，解壓縮後資料夾名修改為 'Public_testing_dataset' 及 'Private_testing_dataset'
+2. **To store the Public testing dataset and the Private testing dataset**
+   ```Public_testing_dataset``` and ```Private_testing_dataset``` can be downloaded from the [competition official website](https://tbrain.trendmicro.com.tw/Competitions/Details/35). After unzipping, rename the folders to 'Public_testing_dataset' and 'Private_testing_dataset'.
 ```
 ├── *Public_testing_dataset
 │   └── *img
 ├── *Private_testing_dataset
 └── └── *img
 ```
-3. **存放拆分過後的訓練資料集**  
-   將訓練資料集（共 4320 張圖像）拆分為 8:1:1，分別存放於 ```train```、```validation```、```test``` 三資料夾中的 ```imgs``` 以及 ```gts```  
-   我們已事先拆分，可從[拆分後訓練集下載連結](https://drive.google.com/drive/folders/1kpdUyI5xJUwnJnk_qU78NpusmoHFGszS)下載，解壓縮後存放於 ```Training_dataset``` 資料夾中
+3. **To store the split training dataset.**
+   Split the training dataset (a total of 4,320 images) into an 8:1:1 ratio and store them in the ```train```, ```validation```, and ```test``` folders under the ```imgs``` and ```gts``` subfolders.
+   We have already split the dataset, and you can download it from [Split Training Dataset Download Link](https://drive.google.com/drive/folders/1kpdUyI5xJUwnJnk_qU78NpusmoHFGszS). After extracting, store it in the ```Training_dataset``` folder.
 ```
 ├── *Training_dataset
 │   ├── *test
@@ -85,26 +89,26 @@ pip install -r requirements.txt
 │       ├── *gts
 └──     └── *imgs
 ```
-4. **存放 EncoderDecoder-PatchGAN 及 Unet-PatchGAN 模型定義**
+4. **To store the definitions of the EncoderDecoder-PatchGAN and Unet-PatchGAN models**
 ```
 ├── models
 │   ├── _init_.py
 │   ├── EncoderDecoderPatchGAN.py
 └── └── UnetPatchGAN.py
 ```
-5. **進行資料擴增**  
-   執行後會在 ```Training_dataset``` 產生 ```aug_train``` 資料夾，存放原圖像及擴增後的圖像
+5. **Perform data augmentation**  
+   After execution, an ```aug_train``` folder will be created in the ```Training_dataset``` folder, containing the original images and the augmented images.
 ```
 ├── preprocess.ipynb
 ```
-6. **進行模型訓練**  
-   train_EncoderDecoder.ipynb（train_Unet.ipynb） 執行過程會產生 ```models_EncoderDecoder```（```models_Unet```） 及 ```EncoderDecoder_validation_output```（```Unet_validation_output```） 兩個資料夾，分別存放訓練過程模型權重及驗證生成圖像
+6. **Model training**
+   During the execution of train_EncoderDecoder.ipynb (or train_Unet.ipynb), two folders will be created: ```models_EncoderDecoder``` (or ```models_Unet```) and ```EncoderDecoder_validation_output``` (or ```Unet_validation_output```). These folders will store the model weights from the training process and the validation-generated images, respectively.
 ```
 ├── train_EncoderDecoder.ipynb
 └── train_Unet.ipynb
 ```
-7. **進行測試與生成 public testing dataset 及 private testing dataset 結果**  
-   測試生成圖像存放於 ```test_result``` 資料夾中，public testing dataset 及 private testing dataset 生成結果存放於 ```submission``` 資料夾中
+7. **Conduct testing and generate results for the public testing dataset and private testing dataset**
+   The generated test images will be stored in the ```test_result``` folder, while the results from the public testing dataset and private testing dataset will be stored in the ```submission``` folder.
 ```
 ├── evaluation.ipynb
 ```
