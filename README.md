@@ -1,9 +1,9 @@
-# Generative-AI Navigation Information Competition for UAV Reconnaissance in Natural Environments II：Navigation Data Generation --- TEAM_5171
+# Generative-AI Navigation Information Competition for UAV Reconnaissance in Natural Environments II：Navigation Data Generation—TEAM_5171
 
 ## Overview
 This is AI CUP 2024 spring competition ([website](https://tbrain.trendmicro.com.tw/Competitions/Details/35)). The competition focuses on using generative AI to transform images of roads and rivers captured by drones into navigational maps, enabling autonomous navigation. It also highlights the scarcity of competitions that combine these two fields, aiming to deepen participants' understanding and capabilities in applying these technologies to real-world scenarios.  
 
-We received an Honorable Mention (Top 5%) in this competition.
+We ([Chang Hsiang](https://github.com/chsiang426) and [Wang Mu-Hong](https://github.com/allenw415)) received an Honorable Mention (Top 5%) in this competition.
 ## Set Up Environment
 Install [pytorch、cudatoolkit](https://pytorch.org/) according to the appropriate GPU version.
 ```
@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 ## Repository Structure
-(The **\*** Symbol: Due to the large file content, you'll need to add them manually, referring to **File Description** 1., 2., 3.)
+(The **\*** Symbol: Due to the large file content, you'll need to add them manually, referring to **File Description** 1., 2., 3.)  
 ```
 ├── *best_models_weight
 │   ├── *EncoderDecoder_epoch_230.pth
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 │   ├── *UNet_epoch_680.pth
 └── └── *UNet_epoch_775.pth
 ```
-2. **To store the Public testing dataset and the Private testing dataset**
+2. **To store the Public testing dataset and the Private testing dataset**  
    ```Public_testing_dataset``` and ```Private_testing_dataset``` can be downloaded from the [competition official website](https://tbrain.trendmicro.com.tw/Competitions/Details/35). After unzipping, rename the folders to 'Public_testing_dataset' and 'Private_testing_dataset'.
 ```
 ├── *Public_testing_dataset
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 ├── *Private_testing_dataset
 └── └── *img
 ```
-3. **To store the split training dataset.**
+3. **To store the split training dataset**  
    Split the training dataset (a total of 4,320 images) into an 8:1:1 ratio and store them in the ```train```, ```validation```, and ```test``` folders under the ```imgs``` and ```gts``` subfolders.
    We have already split the dataset, and you can download it from [Split Training Dataset Download Link](https://drive.google.com/drive/folders/1kpdUyI5xJUwnJnk_qU78NpusmoHFGszS). After extracting, store it in the ```Training_dataset``` folder.
 ```
@@ -102,13 +102,13 @@ pip install -r requirements.txt
 ```
 ├── preprocess.ipynb
 ```
-6. **Model training**
+6. **Model training**  
    During the execution of train_EncoderDecoder.ipynb (or train_Unet.ipynb), two folders will be created: ```models_EncoderDecoder``` (or ```models_Unet```) and ```EncoderDecoder_validation_output``` (or ```Unet_validation_output```). These folders will store the model weights from the training process and the validation-generated images, respectively.
 ```
 ├── train_EncoderDecoder.ipynb
 └── train_Unet.ipynb
 ```
-7. **Conduct testing and generate results for the public testing dataset and private testing dataset**
+7. **Conduct testing and generate results for the public testing dataset and private testing dataset**  
    The generated test images will be stored in the ```test_result``` folder, while the results from the public testing dataset and private testing dataset will be stored in the ```submission``` folder.
 ```
 ├── evaluation.ipynb
